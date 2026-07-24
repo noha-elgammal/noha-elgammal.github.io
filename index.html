@@ -114,10 +114,10 @@
     .development-card{position:sticky;top:102px;overflow:hidden}.development-card-header{padding:24px;color:#fff;background:linear-gradient(135deg,var(--navy-800),var(--navy-700))}
     .development-list{display:grid}.development-item{padding:21px 24px;border-bottom:1px solid var(--line)}.development-item:last-child{border-bottom:0}.development-item span{display:block;margin-top:5px;color:var(--muted);font-size:.88rem}
 
-    .flagship{overflow:hidden;display:grid;grid-template-columns:1.08fr .92fr;min-height:520px;background:#fff;border:1px solid rgba(140,184,255,.14);border-radius:var(--radius-lg);box-shadow:0 24px 80px rgba(3,8,26,.25)}
+    .flagship{overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:520px;background:#fff;border:1px solid rgba(140,184,255,.14);border-radius:var(--radius-lg);box-shadow:0 24px 80px rgba(3,8,26,.25)}
     .flagship-copy{padding:52px;color:var(--text)}.flagship-copy .eyebrow{color:var(--violet-dark)}.flagship-copy p{color:#4e5971}
     .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.metric{padding:17px;background:var(--surface-alt);border:1px solid var(--line);border-radius:14px}.metric strong{display:block;color:var(--navy-900);font-size:1.32rem}.metric span{color:var(--muted);font-size:.81rem;font-weight:700}
-    .flagship-visual{position:relative;min-height:430px;overflow:hidden;background:radial-gradient(circle at 22% 18%,rgba(140,184,255,.42),transparent 24%),radial-gradient(circle at 76% 76%,rgba(117,104,248,.50),transparent 28%),linear-gradient(145deg,#10182c,#0a1021)}.project-photo{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:cover}.flagship-visual .project-photo{object-fit:cover;object-position:center;padding:0;background:linear-gradient(145deg,#10182c,#0a1021)}
+    .flagship-visual{position:relative;min-height:560px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 22% 18%,rgba(140,184,255,.42),transparent 24%),radial-gradient(circle at 76% 76%,rgba(117,104,248,.50),transparent 28%),linear-gradient(145deg,#10182c,#0a1021)}.project-photo{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:cover}.flagship-visual .project-photo{object-fit:contain;object-position:center;padding:18px;background:transparent}
     .phone{position:absolute;top:50%;left:50%;width:min(64%,280px);aspect-ratio:.52;padding:10px;background:#070a12;border:1px solid rgba(255,255,255,.13);border-radius:36px;box-shadow:0 35px 70px rgba(0,0,0,.42);transform:translate(-50%,-50%) rotate(5deg)}
     .phone-screen{height:100%;overflow:hidden;background:linear-gradient(180deg,rgba(117,104,248,.14),transparent 30%),#f7f8fd;border-radius:28px}.phone-top{width:34%;height:20px;margin:0 auto 28px;background:#070a12;border-radius:0 0 16px 16px}.phone-content{padding:0 18px}
     .phone-logo{width:48px;height:48px;display:grid;place-items:center;margin-bottom:18px;color:#fff;background:linear-gradient(135deg,var(--violet),#5f91ed);border-radius:14px;font-weight:900}
@@ -146,10 +146,10 @@
     @media (max-width:980px){
       .beyond-grid{grid-template-columns:1fr 1fr}
       .nav-links{position:fixed;top:74px;right:18px;left:18px;display:none;padding:14px;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.nav-links.open{display:grid}.nav-links a{padding:13px 14px}.menu-button{display:grid}
-      .about-grid,.experience-layout,.flagship,.contact-layout{grid-template-columns:1fr}.development-card{position:static}.flagship-visual{min-height:500px}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .about-grid,.experience-layout,.contact-layout{grid-template-columns:1fr}.flagship{display:flex;flex-direction:column}.flagship-visual{order:-1;width:100%;min-height:0;aspect-ratio:1/1}.flagship-visual .project-photo{padding:14px;object-fit:contain}.development-card{position:static}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
     @media (max-width:720px){
-      .container{width:min(calc(100% - 28px),var(--max-width))}.section{padding:78px 0}.section-heading{display:block;margin-bottom:32px}.hero-content{padding:125px 0 72px}.hero-proof,.project-grid,.education-grid,.recommendation-grid,.beyond-grid,.skill-grid,.mini-project-grid{grid-template-columns:1fr}.flagship-copy{padding:30px 24px}.metric-grid{grid-template-columns:1fr}.project-body,.project-category,.education-card,.contact-form{padding:24px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}
+      .container{width:min(calc(100% - 28px),var(--max-width))}.section{padding:78px 0}.flagship-visual{aspect-ratio:1/1.02}.flagship-visual .project-photo{padding:8px}.section-heading{display:block;margin-bottom:32px}.hero-content{padding:125px 0 72px}.hero-proof,.project-grid,.education-grid,.recommendation-grid,.beyond-grid,.skill-grid,.mini-project-grid{grid-template-columns:1fr}.flagship-copy{padding:30px 24px}.metric-grid{grid-template-columns:1fr}.project-body,.project-category,.education-card,.contact-form{padding:24px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}
     }
     @media (max-width:520px){
       h1{font-size:clamp(3rem,17vw,5rem)}.hero-actions .button,.card-actions .button{width:100%}.experience-card{padding:24px 20px 24px 58px}.timeline::before{left:15px}.experience-icon{left:2px}.highlight-grid{grid-template-columns:1fr}.beyond-card{min-height:245px;padding:27px}
@@ -259,7 +259,7 @@
               <a class="button button-outline" href="#contact">Discuss the project</a>
             </div>
           </div>
-          <div class="flagship-visual" aria-label="VeriSight mobile application visual"><img class="project-photo" src="verisight-app.webp" alt="VeriSight mobile application interface" decoding="async" onerror="this.remove()" /><div class="phone"><div class="phone-screen"><div class="phone-top"></div><div class="phone-content"><div class="phone-logo">V</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-card"><div class="scan-icon">AI</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-button"></div></div></div></div></div></div>
+          <div class="flagship-visual" aria-label="VeriSight mobile application and seven integrated AI models"><img class="project-photo" src="verisight-app.webp" alt="VeriSight mobile application surrounded by its seven integrated AI models" decoding="async" /></div></div>
         </article>
       </div>
     </section>
