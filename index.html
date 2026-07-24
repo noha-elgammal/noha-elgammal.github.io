@@ -79,7 +79,7 @@
     .hero-content{position:relative;z-index:1;padding:140px 0 92px}
     .availability{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px;padding:8px 13px;color:#dce6ff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;font-size:.88rem;font-weight:700}
     .availability-dot{width:9px;height:9px;background:#8de0bd;border-radius:50%;box-shadow:0 0 0 5px rgba(141,224,189,.11)}
-    .hero-name{display:block;margin-bottom:12px;color:var(--blue);font-size:clamp(1rem,2vw,1.18rem);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .hero-name{display:block;max-width:900px;margin-bottom:18px;color:#fff;font-size:clamp(2.3rem,5.5vw,4.8rem);font-weight:900;line-height:1;letter-spacing:-.045em;text-transform:none;text-shadow:0 12px 38px rgba(117,104,248,.22)}
     .hero h1 span{color:transparent;background:linear-gradient(90deg,#fff,#bcd4ff 60%,#9e95ff);-webkit-background-clip:text;background-clip:text}
     .hero-subtitle{max-width:780px;margin-bottom:18px;color:#dfe5f5;font-size:clamp(1.25rem,3vw,2rem);line-height:1.35;letter-spacing:-.02em}
     .hero-copy{max-width:690px;margin-bottom:34px;color:#aeb8d1;font-size:1.05rem}
@@ -117,7 +117,7 @@
     .flagship{overflow:hidden;display:grid;grid-template-columns:1.08fr .92fr;min-height:520px;background:#fff;border:1px solid rgba(140,184,255,.14);border-radius:var(--radius-lg);box-shadow:0 24px 80px rgba(3,8,26,.25)}
     .flagship-copy{padding:52px;color:var(--text)}.flagship-copy .eyebrow{color:var(--violet-dark)}.flagship-copy p{color:#4e5971}
     .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.metric{padding:17px;background:var(--surface-alt);border:1px solid var(--line);border-radius:14px}.metric strong{display:block;color:var(--navy-900);font-size:1.32rem}.metric span{color:var(--muted);font-size:.81rem;font-weight:700}
-    .flagship-visual{position:relative;min-height:430px;overflow:hidden;background:radial-gradient(circle at 22% 18%,rgba(140,184,255,.42),transparent 24%),radial-gradient(circle at 76% 76%,rgba(117,104,248,.50),transparent 28%),linear-gradient(145deg,#10182c,#0a1021)}
+    .flagship-visual{position:relative;min-height:430px;overflow:hidden;background:radial-gradient(circle at 22% 18%,rgba(140,184,255,.42),transparent 24%),radial-gradient(circle at 76% 76%,rgba(117,104,248,.50),transparent 28%),linear-gradient(145deg,#10182c,#0a1021)}.project-photo{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:cover}.flagship-visual .project-photo{object-fit:contain;padding:28px;background:linear-gradient(145deg,#10182c,#0a1021)}
     .phone{position:absolute;top:50%;left:50%;width:min(64%,280px);aspect-ratio:.52;padding:10px;background:#070a12;border:1px solid rgba(255,255,255,.13);border-radius:36px;box-shadow:0 35px 70px rgba(0,0,0,.42);transform:translate(-50%,-50%) rotate(5deg)}
     .phone-screen{height:100%;overflow:hidden;background:linear-gradient(180deg,rgba(117,104,248,.14),transparent 30%),#f7f8fd;border-radius:28px}.phone-top{width:34%;height:20px;margin:0 auto 28px;background:#070a12;border-radius:0 0 16px 16px}.phone-content{padding:0 18px}
     .phone-logo{width:48px;height:48px;display:grid;place-items:center;margin-bottom:18px;color:#fff;background:linear-gradient(135deg,var(--violet),#5f91ed);border-radius:14px;font-weight:900}
@@ -136,7 +136,7 @@
     .education-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.education-card{padding:30px}.education-topline{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:16px}.education-date{flex:0 0 auto;padding:7px 10px;color:var(--violet-dark);background:var(--surface-violet);border-radius:999px;font-size:.8rem;font-weight:800}.education-card p{color:var(--muted)}.score{display:inline-flex;align-items:baseline;gap:7px;margin-top:8px;color:var(--navy-900);font-size:1.5rem;font-weight:900}.score small{color:var(--muted);font-size:.78rem;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
     .highlight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.highlight-card{padding:23px}.highlight-card strong{display:block;margin-bottom:7px;font-size:1.04rem}.highlight-card span{color:var(--muted);font-size:.89rem}
     .recommendation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.recommendation-card{position:relative;padding:28px;overflow:hidden}.recommendation-card::before{position:absolute;top:-14px;right:18px;color:rgba(117,104,248,.09);content:"“";font-family:Georgia,serif;font-size:8rem;line-height:1}.recommendation-card p{position:relative;margin:0;color:#505a70}.recommendation-footer{margin-top:26px;padding:18px 22px;color:#49536a;background:var(--surface-violet);border:1px solid rgba(117,104,248,.14);border-radius:14px;text-align:center;font-weight:800}
-    .beyond-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.beyond-card{min-height:270px;padding:34px;position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 82% 18%,rgba(140,184,255,.22),transparent 26%),linear-gradient(145deg,var(--navy-800),#11192e);border:1px solid rgba(255,255,255,.09);border-radius:var(--radius-lg)}.beyond-card:nth-child(2){background:radial-gradient(circle at 75% 25%,rgba(117,104,248,.32),transparent 28%),linear-gradient(145deg,#15172a,#29234d)}.beyond-card span{display:inline-block;margin-bottom:54px;color:var(--blue);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.beyond-card p{max-width:520px;margin-bottom:0;color:#bdc6dc}
+    .beyond-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.beyond-card{min-height:270px;padding:34px;position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 82% 18%,rgba(140,184,255,.22),transparent 26%),linear-gradient(145deg,var(--navy-800),#11192e);border:1px solid rgba(255,255,255,.09);border-radius:var(--radius-lg)}.beyond-card:nth-child(2){background:radial-gradient(circle at 75% 25%,rgba(117,104,248,.32),transparent 28%),linear-gradient(145deg,#15172a,#29234d)}.beyond-card span{display:inline-block;margin-bottom:54px;color:var(--blue);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.beyond-card p{max-width:520px;margin-bottom:0;color:#bdc6dc}
 
     .contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:42px;align-items:start}.contact-details{display:grid;gap:14px;margin-top:32px}.contact-link{display:flex;align-items:center;gap:13px;padding:15px 16px;color:#dfe6f7;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);border-radius:13px;transition:background .2s ease,transform .2s ease}.contact-link:hover{background:rgba(255,255,255,.09);transform:translateX(3px)}
     .contact-form{padding:32px;color:var(--text);background:#fff;border-radius:var(--radius-lg);box-shadow:0 24px 70px rgba(0,0,0,.22)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin-bottom:16px}.field.full{grid-column:1/-1}label{display:block;margin-bottom:7px;color:#354057;font-size:.88rem;font-weight:800}input,textarea{width:100%;color:var(--text);background:#fafbfe;border:1px solid #dfe4ee;border-radius:11px;outline:none;transition:border-color .2s ease,box-shadow .2s ease,background .2s ease}input{min-height:48px;padding:0 14px}textarea{min-height:150px;padding:13px 14px;resize:vertical}input:focus,textarea:focus{background:#fff;border-color:var(--violet);box-shadow:0 0 0 4px rgba(117,104,248,.11)}.form-note{margin:12px 0 0;color:var(--muted);font-size:.82rem}.form-status{min-height:24px;margin:12px 0 0;color:#2f7d62;font-size:.88rem;font-weight:750}
@@ -144,6 +144,7 @@
     .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 
     @media (max-width:980px){
+      .beyond-grid{grid-template-columns:1fr 1fr}
       .nav-links{position:fixed;top:74px;right:18px;left:18px;display:none;padding:14px;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.nav-links.open{display:grid}.nav-links a{padding:13px 14px}.menu-button{display:grid}
       .about-grid,.experience-layout,.flagship,.contact-layout{grid-template-columns:1fr}.development-card{position:static}.flagship-visual{min-height:500px}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
@@ -251,9 +252,14 @@
             <p>VeriSight integrates specialized models for phishing and deepfake analysis across text, images, audio, and video. The platform brings fragmented detection capabilities into one mobile application and communicates results in a way that supports informed user decisions.</p>
             <div class="metric-grid"><div class="metric"><strong>7</strong><span>Integrated AI models</span></div><div class="metric"><strong>&lt;40 ms</strong><span>Real-time phishing response</span></div><div class="metric"><strong>4 formats</strong><span>Text, image, audio and video</span></div></div>
             <ul class="tag-list" aria-label="VeriSight technologies"><li class="tag">Flutter</li><li class="tag">FastAPI</li><li class="tag">Python</li><li class="tag">Machine Learning</li><li class="tag">Computer Vision</li><li class="tag">NLP</li><li class="tag">Mobile Integration</li></ul>
-            <div class="card-actions" style="margin-top:28px"><a class="button button-disabled" href="#" aria-disabled="true" tabindex="-1">Demo link coming soon</a><a class="button button-outline" href="#contact">Discuss the project</a></div>
+            <div class="card-actions" style="margin-top:28px">
+              <!-- When your demo is ready, add this button before “Discuss the project”:
+              <a class="button button-primary" href="PASTE_YOUR_DEMO_LINK_HERE" target="_blank" rel="noreferrer">Watch demo ↗</a>
+              -->
+              <a class="button button-outline" href="#contact">Discuss the project</a>
+            </div>
           </div>
-          <div class="flagship-visual" aria-label="Abstract mobile application mockup"><div class="phone"><div class="phone-screen"><div class="phone-top"></div><div class="phone-content"><div class="phone-logo">V</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-card"><div class="scan-icon">AI</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-button"></div></div></div></div></div></div>
+          <div class="flagship-visual" aria-label="VeriSight mobile application visual"><img class="project-photo" src="verisight-app.webp" alt="VeriSight mobile application interface" decoding="async" onerror="this.remove()" /><div class="phone"><div class="phone-screen"><div class="phone-top"></div><div class="phone-content"><div class="phone-logo">V</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-card"><div class="scan-icon">AI</div><div class="phone-line"></div><div class="phone-line short"></div><div class="scan-button"></div></div></div></div></div></div>
         </article>
       </div>
     </section>
@@ -263,11 +269,11 @@
         <div class="section-heading reveal"><div><span class="eyebrow">Featured work</span><h2 id="featured-projects-title">Three projects, three sides of engineering.</h2><p class="lead">The homepage emphasizes digital-product development, enterprise infrastructure, and creative hardware implementation.</p></div></div>
         <div class="project-grid">
           <article class="project-card card card-hover reveal">
-            <div class="project-visual network" aria-hidden="true"><div class="network-map"><div class="network-node">L3</div><div class="network-node">R</div><div class="network-node">S</div><div class="network-node">V</div><div class="network-node">AP</div><div class="network-node">FW</div></div></div>
+            <div class="project-visual network"><img class="project-photo" src="faculty-network.webp" alt="Faculty network infrastructure design diagram" loading="lazy" decoding="async" onerror="this.remove()" /><div class="network-map" aria-hidden="true"><div class="network-node">L3</div><div class="network-node">R</div><div class="network-node">S</div><div class="network-node">V</div><div class="network-node">AP</div><div class="network-node">FW</div></div></div>
             <div class="project-body"><div class="project-kicker">Enterprise networking</div><h3>Faculty Network Infrastructure Design</h3><p>Designed a complete multi-building faculty network with structured requirements analysis, VLAN segmentation, inter-VLAN routing, redundancy, dynamic routing, security considerations, and scalable infrastructure planning.</p><ul class="tag-list"><li class="tag">Cisco</li><li class="tag">OSPF</li><li class="tag">HSRP</li><li class="tag">VLANs</li><li class="tag">STP</li><li class="tag">EtherChannel</li></ul></div>
           </article>
           <article class="project-card card card-hover reveal">
-            <div class="project-visual laser" aria-hidden="true"><div class="laser-frame"><div class="laser-head"></div></div></div>
+            <div class="project-visual laser"><img class="project-photo" src="laserlite.webp" alt="LaserLite compact laser engraver" loading="lazy" decoding="async" onerror="this.remove()" /><div class="laser-frame" aria-hidden="true"><div class="laser-head"></div></div></div>
             <div class="project-body"><div class="project-kicker">Hardware · First-place project</div><h3>LaserLite Compact Laser Engraver</h3><p>Led the development of a compact engraver using Arduino, a CNC shield, reused stepper motors, and a PLA+ 3D-printed body—demonstrating practical electronics, fabrication, resourcefulness, and multidisciplinary teamwork.</p><ul class="tag-list"><li class="tag">Arduino</li><li class="tag">CNC Shield</li><li class="tag">Electronics</li><li class="tag">3D Printing</li><li class="tag">Team Leadership</li></ul></div>
           </article>
         </div>
@@ -318,13 +324,13 @@
       <div class="container">
         <div class="section-heading reveal"><div><span class="eyebrow">Highlights</span><h2>Competitions, leadership and professional development.</h2><p class="lead">Selected experiences that demonstrate initiative beyond coursework.</p></div></div>
         <div class="highlight-grid">
-          <article class="highlight-card card card-hover reveal"><strong>Huawei ICT Competition</strong><span>Bronze medal · Network track</span></article>
-          <article class="highlight-card card card-hover reveal"><strong>Technical Competition</strong><span>First place · Mechanical design</span></article>
+          <article class="highlight-card card card-hover reveal"><strong>Huawei ICT Competition</strong><span>Bronze medal · International competition · Network track</span></article>
+          <article class="highlight-card card card-hover reveal"><strong>IEEE Technical Competition</strong><span>First place · Mechanical design</span></article>
           <article class="highlight-card card card-hover reveal"><strong>LaserLite</strong><span>First-place team · Electronics competition</span></article>
           <article class="highlight-card card card-hover reveal"><strong>IEEE Student Branch</strong><span>Technical team member and recognized contributor</span></article>
           <article class="highlight-card card card-hover reveal"><strong>The Compass Magazine</strong><span>COO, graphic designer and web designer</span></article>
           <article class="highlight-card card card-hover reveal"><strong>Debate</strong><span>Advanced debater · Research and structured argumentation</span></article>
-          <article class="highlight-card card card-hover reveal"><strong>Model United Nations</strong><span>Delegate experience in Riyadh</span></article>
+          <article class="highlight-card card card-hover reveal"><strong>Model United Nations</strong><span>Delegate · PSUMUN at Prince Sultan University &amp; SAMUN</span></article>
           <article class="highlight-card card card-hover reveal"><strong>Hackathons &amp; Incubation</strong><span>Product development, pitching and business-model exposure</span></article>
         </div>
       </div>
@@ -345,10 +351,11 @@
 
     <section class="section section-alt" id="beyond">
       <div class="container">
-        <div class="section-heading reveal"><div><span class="eyebrow">Beyond engineering</span><h2>Discipline and consistency beyond the classroom.</h2><p class="lead">A professional identity is stronger when it reflects the habits behind the achievements.</p></div></div>
+        <div class="section-heading reveal"><div><span class="eyebrow">Beyond engineering</span><h2>Discipline, strength and communication beyond the classroom.</h2><p class="lead">A professional identity is stronger when it reflects the habits behind the achievements.</p></div></div>
         <div class="beyond-grid">
           <article class="beyond-card reveal"><span>Karate</span><h2>IKO-certified 1st Dan Black Belt</h2><p>Awarded by Honbu, Tokyo. Years of Kyokushin training strengthened my discipline, confidence, resilience, and commitment to long-term development.</p></article>
           <article class="beyond-card reveal"><span>Strength training</span><h2>Progress through structure and consistency</h2><p>Weightlifting reinforces the same mindset I bring to engineering: measurable progress, patience, honest evaluation, and steady improvement over time.</p></article>
+          <article class="beyond-card reveal"><span>Motivational writing</span><h2>Turning reflection into useful messages</h2><p>I write motivational content about discipline, purposeful growth, resilience, and building a meaningful personal and professional life.</p></article>
         </div>
       </div>
     </section>
@@ -364,25 +371,26 @@
               <div class="contact-link"><strong>Location</strong><span>Riyadh, Saudi Arabia</span></div>
             </div>
           </div>
-          <form class="contact-form reveal" id="contact-form">
-            <h3>Send a message</h3><p class="muted">This first version opens your email application with the message prepared.</p>
+          <form class="contact-form reveal" action="https://formsubmit.co/noha.m.elgammal@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from Noha Elgammal's portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://noha-elgammal.github.io/thank-you.html" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
             <div class="form-grid">
               <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
               <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
-              <div class="field full"><label for="organization">Company or organization</label><input id="organization" name="organization" type="text" autocomplete="organization" /></div>
-              <div class="field full"><label for="subject">Reason for contact</label><input id="subject" name="subject" type="text" required /></div>
               <div class="field full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
             </div>
-            <button class="button button-primary" type="submit">Prepare email →</button>
-            <p class="form-note">A future version can connect this form to Formspree so it sends directly without opening the visitor’s email app.</p>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+            <button class="button button-primary" type="submit">Submit message →</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="footer-inner container"><span>© <span id="year"></span> Noha Elgammal. Built as a focused professional portfolio.</span><a href="#home">Back to top ↑</a></div></footer>
+  <footer><div class="footer-inner container"><span>© <span id="year"></span> Noha Elgammal.</span><a href="#home">Back to top ↑</a></div></footer>
 
   <script>
     const header=document.getElementById("site-header");
@@ -404,21 +412,6 @@
     sections.forEach(section=>sectionObserver.observe(section));
     document.getElementById("year").textContent=new Date().getFullYear();
 
-    const contactForm=document.getElementById("contact-form");
-    const formStatus=document.getElementById("form-status");
-    contactForm.addEventListener("submit",event=>{
-      event.preventDefault();
-      const data=new FormData(contactForm);
-      const name=data.get("name").trim();
-      const email=data.get("email").trim();
-      const organization=data.get("organization").trim();
-      const subject=data.get("subject").trim();
-      const message=data.get("message").trim();
-      const body=[`Name: ${name}`,`Email: ${email}`,organization?`Company/Organization: ${organization}`:"","",message].filter(Boolean).join("\n");
-      const mailto=`mailto:noha.m.elgammal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      formStatus.textContent="Opening your email application…";
-      window.location.href=mailto;
-    });
   </script>
 </body>
 </html>
